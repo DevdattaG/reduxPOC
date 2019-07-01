@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vanilla Js 🌴🌴🌴</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
+  <script src="bundle.js"></script>
+  
+</head>
+<body>
+<!-- Add your site or application content here -->
+  <header id="header">
+    <h1>Hello World</h1>
+  </header>
+  <div>
+    <div>
+      <button onclick="window.dispatchEvent(new CustomEvent('changeTheme', { detail: 'red' }))">Red</button>
+      <button onclick="window.dispatchEvent(new CustomEvent('changeTheme', { detail: 'green' }))">Green</button>
+      <button onclick="window.dispatchEvent(new CustomEvent('changeTheme', { detail: 'blue' }))">Blue</button>
+    </div>
+    <button id="getall" onclick="window.dispatchEvent(new Event('getAll'))">Fetch All...!</button>
+    <div id="userData">
+      
+    </div>
+  </div>
+</body>
+</html>
